@@ -1,0 +1,92 @@
+<section class="content">
+    <div class="container-fluid">
+        <div class="row mt-4">
+            <div class="col-md-12 col-sm-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="col d-flex justify-content-center">
+                            <h2>Conductores</h2>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="row d-flex justify-content-center mt-2"  [formGroup]="conductoresForm">
+                            <div class="col-md-auto">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <mat-form-field appearance="outline" class="full-width">
+                                            <mat-label>Nombre</mat-label>
+                                            <input matInput formControlName="nombre" type="text" autocomplete="off">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-4">
+                                        <mat-form-field appearance="outline" class="full-width">
+                                            <mat-label>Apellido</mat-label>
+                                            <input matInput formControlName="apellido" type="text" autocomplete="off">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-4">
+                                        <mat-form-field appearance="outline" class="full-width">
+                                            <mat-label>DPI</mat-label>
+                                            <input matInput formControlName="dpi" type="number" autocomplete="off">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <mat-form-field appearance="outline" class="full-width">
+                                            <mat-label>Dirección</mat-label>
+                                            <input matInput formControlName="direccion" type="text" autocomplete="off">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-4">
+                                        <mat-form-field appearance="outline" class="full-width">
+                                            <mat-label>Telefono</mat-label>
+                                            <input matInput formControlName="telefono" type="tel" autocomplete="off">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-4">
+                                        <mat-form-field appearance="outline" class="full-width">
+                                            <mat-label>Email</mat-label>
+                                            <input matInput formControlName="correo" type="email" autocomplete="off">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <mat-form-field appearance="outline" class="full-width">
+                                            <mat-label>Número De Licencia</mat-label>
+                                            <input matInput formControlName="licenciaNo" type="number"
+                                                autocomplete="off">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-4">
+                                        <mat-form-field appearance="outline" class="full-width">
+                                            <mat-label>Fecha Vencimiento</mat-label>
+                                            <input matInput [matDatepicker]="picker" formControlName="fechaVencimiento">
+                                            <mat-datepicker-toggle matSuffix [for]="picker">
+                                            </mat-datepicker-toggle>
+                                            <mat-datepicker #picker></mat-datepicker>
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row mt-2 justify-content-center">
+                                <div class="col-md-auto" style="text-align: center;">
+                                    <button mat-raised-button type="button"
+                                        class="btn btn-success me-2"><mat-icon>save</mat-icon>
+                                        Save
+                                    </button>
+                                    <button mat-raised-button type="button"
+                                        class="btn btn-danger"><mat-icon>refresh</mat-icon>
+                                        Clear
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

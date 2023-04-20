@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button (click)="opened=!opened">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>Flotilla De Camiones</span>
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav [(opened)]="opened" mode="side">
+        <mat-list class="align-content-center">
+            <mat-list class="align-content-center">
+                <mat-list-item class="icon-top"><a routerLink="/home" style="text-decoration: none;">
+                        <mat-icon>home</mat-icon>Inicio</a></mat-list-item>
+            </mat-list>
+            <mat-list-item class="icon-top"><a routerLink="/conductores" style="text-decoration: none;">
+                    <mat-icon>groups</mat-icon>Conductores</a></mat-list-item>
+            <mat-list-item class="icon-top"><a routerLink="/camiones" style="text-decoration: none;">
+                    <mat-icon>local_shipping</mat-icon>Camiones</a></mat-list-item>
+        </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

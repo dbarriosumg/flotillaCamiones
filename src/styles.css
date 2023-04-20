@@ -1,1 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.full-width {
+    width: 100%;
+    font-size: 12px;
+}
+
+.header,
+.body {
+    padding: 10px 15px;
+}
+
+.card .header {
+    padding: 5px 15px;
+}
+
+.body .row {
+    margin-bottom: 0px !important;
+}
+
+.card .body {
+    font-size: 11px;
+    color: #555;
+    padding: 10px 15px;
+}
+
+.revenue-container {
+    display: none;
+}
+
+.mat-table-details {
+    width: 1770px;
+}
+
+.row {
+    margin: 0px;
+}
+
+--------------
+
+/*Estilos Scroll*/
+::-webkit-scrollbar-track {
+    overflow-x: auto;
+    border-radius: 10px;
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #c2c7c2 white;
+}
+
+/* Works on Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: white;
+    overflow-x: auto;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c2c7c2;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+/* Estilos para los inputs */
+.mat-form-field-flex>.mat-form-field-infix {
+    padding: 0.4em 0px !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-wrapper {
+    padding-bottom: 1px; 
+    padding-top: 1px;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-label-wrapper {
+    top: -1.5em;
+}
+
+.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+    transform: translateY(-1.1em) scale(0.75);
+    width: 133.33333%;
+}

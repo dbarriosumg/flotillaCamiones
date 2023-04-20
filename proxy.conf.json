@@ -1,0 +1,8 @@
+{
+    "/api/*": {
+      "target": "http://44.201.161.76",
+      "secure": false,
+      "changeOrigin": true
+    }
+  }
+  
